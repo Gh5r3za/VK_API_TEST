@@ -1,5 +1,5 @@
 import vk_api
-import time
+from time import ctime
 
 
 def main():
@@ -18,5 +18,5 @@ def main():
     if fields['online']:
         print('Эта сука онлайн!')
     else:
-        print('Оффлайн. Заходила в', time.ctime(fields['time']))
+        print('Оффлайн. Заходила в', ctime(fields['time']))
 main()
